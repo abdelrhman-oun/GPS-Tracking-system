@@ -1,0 +1,41 @@
+#ifndef UART_REG_H_
+#define UART_REG_H_
+
+
+#include "Platform_Types.h"
+
+
+/* UART Registers base addresses */
+#define UART0_BASE_ADDRESS           0x4000C000
+#define UART1_BASE_ADDRESS           0x4000D000
+#define UART2_BASE_ADDRESS           0x4000E000
+#define UART3_BASE_ADDRESS           0x4000F000
+#define UART4_BASE_ADDRESS           0x40010000
+#define UART5_BASE_ADDRESS           0x40011000
+#define UART6_BASE_ADDRESS           0x40012000
+#define UART7_BASE_ADDRESS           0x40013000
+
+/* UART Registers offset addresses */
+
+#define UART_DATA_REG_OFFSET              0x000
+#define UART_RECEIVE_STATUS_REG_OFFSET    0x004
+#define UART_ERROR_CLEAR_REG_OFFSET       0x004
+#define UART_FLAG_REG_OFFSET              0x018
+#define UART_IRDA_LOW_POWER_REG_OFFSET    0x020
+#define UART_INT_BAUD_RATE_REG_OFFSET     0x024
+#define UART_FRAC_BAUD_RATE_REG_OFFSET    0x028
+#define UART_LINE_CTRL_REG_OFFSET         0x02C
+#define UART_CTRL_REG_OFFSET              0x030
+#define UART_INTERRUPT_FIFO_LEVEL_OFFSET  0x034
+#define UART_INTERRUPT_MASK_OFFSET        0x038
+#define UART_RAW_INTERRUPT_STATUS_OFFSET  0x03C
+#define UART_MSK_INTERRUPT_STATUS_OFFSET  0x040
+#define UART_INTERRUPT_CLEAR_OFFSET       0x044
+#define UART_DMA_CONTROL_REG_OFFSET       0x048
+#define UART_9BIT_SELF_ADD_REG_OFFSET     0x0A4
+#define UART_9BIT_SELF_ADD_MASK_OFFSET    0x0A8
+#define UART_PERIPH_POROP_REG_OFFSET      0xFC0
+#define UART_CLOCK_CONFIG_REG_OFFSET      0xFC8
+
+
+#endif /* UART_REG_H_ */
